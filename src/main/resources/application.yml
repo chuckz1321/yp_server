@@ -6,7 +6,7 @@ server:
 eureka:
   instance:
     #hostname: saeurecatest.mybluemix.net:localhost
-    hostname: ${vcap.application.uris[0]:localhost}
+    hostname: ${vcap.application.uris[1]:localhost}
   client:
     registerWithEureka: false
     fetchRegistry: false
