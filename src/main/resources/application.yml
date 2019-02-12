@@ -15,4 +15,4 @@ eureka:
 
 spring:
   application:
-    name: server
+    name: yp_server
