@@ -1,12 +1,12 @@
 
 
 server:
-  port: 8070
+  port: 8761
 
 eureka:
   instance:
     #hostname: saeurecatest.mybluemix.net:localhost
-    hostname: localhost
+    hostname: ${vcap.application.uris[0]:localhost}
   client:
     registerWithEureka: false
     fetchRegistry: false
